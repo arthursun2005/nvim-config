@@ -13,7 +13,7 @@ vim.keymap.set("n", "<leader>w", ":UndotreeToggle<cr>")
 vim.api.nvim_create_autocmd("FileType", {
         pattern = {'cpp'},
         callback = function(args)
-                vim.keymap.set("n", "<leader>c", ":up<cr>:!g++ -O2 -std=gnu++20 -DDEBUG -Wall -Wextra -Wshadow\"%\" -o \"%:r\"<cr>", { buffer = args.buf })
+                vim.keymap.set("n", "<leader>c", ":up<cr>:!g++ -O2 -std=gnu++20 -DDEBUG -Wall -Wextra -Wshadow \"%\" -o \"%:r\"<cr>", { buffer = args.buf })
         end
 })
 

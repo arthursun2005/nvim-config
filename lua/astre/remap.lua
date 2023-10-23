@@ -20,7 +20,7 @@ vim.api.nvim_create_autocmd("FileType", {
 vim.api.nvim_create_autocmd("FileType", {
         pattern = {'cpp'},
         callback = function(args)
-                vim.keymap.set("n", "<leader><leader>", ":vsplit<cr><c-w>w:term \"./bin/%:r\"<cr>", { buffer = args.buf })
+                vim.keymap.set("n", "<leader><leader>", ":vsplit<cr><c-w>w:term \"./%:r\"<cr>", { buffer = args.buf })
         end
 })
 
